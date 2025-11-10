@@ -1,0 +1,20 @@
+name: Detections-as-Code CI
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate Sigma Rules
+        run: bash detections/ci/test-sigma-rules.yml
+      - name: Compile to Splunk
+        run: bash detections/ci/compile-to-splunk.sh
+      - name: Run Attack Simulations
+        run: bash simulations/tests/validate-detections.sh
+      - name: Generate Detection Report
+        run: python detections/ci/detection-report.py
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: detection-report
+          path: detections-report.md
