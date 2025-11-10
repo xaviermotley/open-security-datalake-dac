@@ -10,7 +10,8 @@
 ---  
 
 ## 📘 Overview  
-This project operationalizes **AWS Security Lake**, **OCSF normalization**, **Sigma detections**, and **Stratus Red Team** attack simulation inside a single GitHub-driven pipeline.  
+This project operationalizes **AWS Security Lake**, **OCSF normalization**, **Sigma detections**, and **Stratus Red Team** attack simulation inside a single GitHub-driven pipeline.
+
 You’ll stand up a real AWS Security Data Lake, author and test detections-as-code, simulate attacks, and produce measurable detection coverage.  
 
 ---  
@@ -70,7 +71,7 @@ graph TD
 ---  
 
 ## 📑 References  
-- [AWS re:Inforce 2025 – Operationalizing Amazon Security Lake](https://aws.amazon.com/security-lake/)  
+- [Operationalizing Amazon Security Lake](https://aws.amazon.com/security-lake/)  
 - [SigmaHQ Rules](https://github.com/SigmaHQ/sigma)  
 - [Stratus Red Team](https://stratus-red-team.cloud)  
 - [OCSF Schema](https://schema.ocsf.io)  
