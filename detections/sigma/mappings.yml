@@ -1,0 +1,5 @@
+mappings:
+  s3-public-access.yml:
+    - aws.s3.bucket-enumeration
+  iam-passrole-abuse.yml:
+    - aws.iam.passrole.misuse
