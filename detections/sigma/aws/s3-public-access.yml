@@ -1,0 +1,9 @@
+title: S3 Public Access
+logsource:
+  product: aws
+  service: s3
+detection:
+  selection:
+    acl: public-read
+  condition: selection
+level: high
