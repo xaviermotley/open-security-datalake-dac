@@ -1,0 +1,9 @@
+title: IAM PassRole Abuse
+logsource:
+  product: aws
+  service: cloudtrail
+detection:
+  selection:
+    eventName: PassRole
+  condition: selection
+level: high
