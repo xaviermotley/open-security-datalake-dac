@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "🔍 Validating Sigma YAML syntax..."
+for file in $(find detections/sigma -name '*.yml'); do
+  yamllint "$file" || exit 1
+done
+echo "✅ All Sigma rules are valid."
